@@ -139,3 +139,71 @@ rfid-mobile-app-testing/
 ```bash
 git clone https://github.com/tonykey910/rfid-mobile-app-testing.git
 cd rfid-mobile-app-testing
+
+2. Install dependencies | 安装依赖
+npm install
+
+3. Run dev server | 启动开发环境
+npm run dev
+
+
+浏览器打开：
+
+http://localhost:4173/
+
+📡 RFID Integration | RFID 集成说明
+
+当前项目内置 Mock RFID Engine，用于：
+
+模拟持续高速扫描
+
+模拟 EPC 队列
+
+模拟读写器吞吐率与准确率
+
+为每个业务模块提供快速测试体验
+
+你可以将 utils/rfid.js 替换为真实硬件厂商 SDK，例如：
+
+Impinj
+
+Alien
+
+Zebra
+
+Nordic
+
+国内读写器厂商的 WebSocket / 串口 / BLE SDK
+
+我可以帮你重写适配层（Adapter Layer）。
+
+👥 Contributing | 团队协作说明
+
+推荐团队开发流程：
+
+main：保持稳定可运行版本
+
+feature/*：按模块开发（如 feature/inbound-api）
+
+通过 Pull Request 合并到 main
+
+ChatGPT/Codex 可辅助生成组件与业务逻辑
+
+提交信息建议使用：
+
+feat: add inbound page logic
+fix: 修复 RFID 扫描 pad 的渲染 bug
+refactor: 重构 tag-binding 逻辑
+
+📄 License | 许可证
+
+本项目采用 MIT License。
+你可以修改、商用、分发本项目代码。
+
+✨ Maintainer | 项目维护者
+
+tonykey910
+RFID Asset Management / ERP / Mobile App Developer
+GitHub: https://github.com/tonykey910
+
+🎉 End
