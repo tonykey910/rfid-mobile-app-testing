@@ -11,6 +11,30 @@ npm run dev
 
 Open `http://localhost:4173`.
 
+## Sync the code to your local folder (Windows example)
+1. Choose the folder where you want the project to live, for example:
+   ```bash
+   cd "C:\\Users\\tonyk\\OneDrive\\原X1文件\\需同步文件\\Github"
+   ```
+2. Clone the repo from GitHub (creates the `rfid-mobile-app-testing` folder):
+   ```bash
+   git clone https://github.com/tonykey910/rfid-mobile-app-testing.git
+   cd rfid-mobile-app-testing
+   ```
+3. If you already have local changes from the previous prototype, copy/replace them into this folder as needed.
+4. Verify you are on the desired branch (e.g., `work`):
+   ```bash
+   git status
+   git branch
+   ```
+5. When you are ready to push your local code up to GitHub:
+   ```bash
+   git add .
+   git commit -m "Your message"
+   git push origin work   # or the branch name you are using
+   ```
+These commands keep the local folder and the GitHub repo in sync.
+
 ## Features
 - **RFID-first workflows:** shared scanner panel delivers burst and continuous reads with live velocity metrics.
 - **ERP modules:** inbound, tag binding, transfer, receiving, usage tracking, maintenance planning & records, and scrap handling.
