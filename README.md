@@ -49,3 +49,93 @@ These commands keep the local folder and the GitHub repo in sync.
 
 ## RFID simulation
 The `useRFID` composable generates EPCs, maintains a bounded queue, and tracks velocity/accuracy so flows can be exercised without hardware.
+
+# RFID Mobile ERP Prototype (Vue 3 + uViewPlus)
+# RFID 移动端双语 ERP 原型系统（Vue 3 + uViewPlus）
+
+A bilingual (English/中文) mobile-focused ERP prototype with RFID-first workflows.  
+测试与展示 RFID 全流程资产管理的移动端 ERP 系统原型，支持中英文双语。
+
+---
+
+## 🌐 Features | 功能特点
+
+### 🎯 **RFID-first workflows | RFID 优先的业务流程**
+系统围绕 RFID 高速读取设计，支持连续读、批量处理、实时读取速率统计。
+
+### 📦 **Core ERP Modules | ERP 核心模块**
+系统模拟资产从入库到报废的全生命周期管理，包括：
+
+- **Inbound / 入库**
+- **Tag Binding / 标签绑定（RFID 绑定资产）**
+- **Transfer / 调拨**
+- **Receiving / 接收**
+- **Usage Tracking / 使用追踪**
+- **Maintenance Plan / 维修计划**
+- **Maintenance Records / 维修记录**
+- **Scrap / 报废管理**
+
+以上模块均支持移动端友好界面与 RFID 交互。
+
+### 🌍 **Bilingual (EN/中文) UI | 中英文切换界面**
+内置语言切换组件，可一键在英文与中文之间切换。
+
+### 📱 **Mobile-first UI (uViewPlus) | 移动端优先 UI**
+使用 **uViewPlus** 组件库，适配 iOS/Android 设备的交互体验。
+
+---
+
+## 🏗 Tech Stack | 技术栈
+
+| Layer | 技术 |
+|-------|------|
+| Framework | Vue 3 (Composition API) |
+| Mobile UI | uViewPlus |
+| Build Tool | Vite |
+| State Management | Composables / Reactive APIs |
+| RFID Engine | Mock RFID high-speed scanner (可接入真实 SDK) |
+| i18n | vue-i18n / 自定义语言字典 |
+| Project Type | Mobile-first ERP Prototype |
+
+---
+
+## 📘 Project Structure | 项目结构
+
+rfid-mobile-app-testing/
+├── index.html
+├── package.json
+├── vite.config.js
+├── src/
+│ ├── App.vue
+│ ├── router/
+│ │ └── index.js
+│ ├── components/
+│ │ ├── LanguageToggle.vue # 中英文切换组件
+│ │ ├── ModuleCard.vue # 主菜单卡片
+│ │ └── RFIDScannerPad.vue # RFID 扫描器界面（模拟连续扫描）
+│ ├── views/
+│ │ ├── DashboardView.vue
+│ │ ├── InboundView.vue
+│ │ ├── TagBindingView.vue
+│ │ ├── TransferView.vue
+│ │ ├── ReceivingView.vue
+│ │ ├── UsageTrackingView.vue
+│ │ ├── MaintenancePlanView.vue
+│ │ ├── MaintenanceRecordsView.vue
+│ │ └── ScrapView.vue
+│ ├── styles/global.css
+│ ├── utils/rfid.js # RFID 连续扫描模拟引擎
+│ ├── i18n/
+│ └── data/mockData.js # 模拟数据源
+└── README.md
+
+
+---
+
+## 🚀 Quick Start | 本地运行指南
+
+### **1. Clone the repo | 克隆仓库**
+
+```bash
+git clone https://github.com/tonykey910/rfid-mobile-app-testing.git
+cd rfid-mobile-app-testing
