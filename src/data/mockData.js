@@ -1,46 +1,46 @@
 export const inboundLoads = [
-  { id: 'PO-4821', staging: 'Dock A2', qaStatus: 'Pending', tagsPaired: 12 },
-  { id: 'PO-4822', staging: 'Yard Gate', qaStatus: 'In QA', tagsPaired: 6 }
+  { id: 'Laundry-4821', staging: 'Service Dock A2', qaStatus: 'Pending stain check', tagsPaired: 48 },
+  { id: 'Laundry-4822', staging: 'Valet Lift', qaStatus: 'QC in progress', tagsPaired: 30 }
 ];
 
 export const tagPairs = [
-  { asset: 'Pump-334', tag: 'EPC-9001', status: 'bound' },
-  { asset: 'Valve-221', tag: 'EPC-9002', status: 'pending' },
-  { asset: 'Motor-872', tag: 'EPC-9003', status: 'error' }
+  { asset: 'King Sheet Set · Floor 28', tag: 'EPC-9001', status: 'bound' },
+  { asset: 'Bath Towel · Pool Deck', tag: 'EPC-9002', status: 'pending' },
+  { asset: 'Plush Robe · Suite 1902', tag: 'EPC-9003', status: 'error' }
 ];
 
 export const transfers = [
-  { id: 'TR-101', from: 'WH-A', to: 'Line 3', carrier: 'Forklift 7', stage: 'Loading', verified: true },
-  { id: 'TR-102', from: 'Line 1', to: 'Yard', carrier: 'Shuttle 2', stage: 'En route', verified: false }
+  { id: 'TR-101', from: 'Laundry Room', to: 'Housekeeping Closet 5F', carrier: 'Cart 07', stage: 'Loading', verified: true },
+  { id: 'TR-102', from: 'Housekeeping Closet 3F', to: 'Sky Bar', carrier: 'Cart 03', stage: 'En route', verified: false }
 ];
 
 export const receipts = [
-  { id: 'RCV-774', proof: 'Signature + RFID', discrepancy: 'None' },
-  { id: 'RCV-775', proof: 'RFID only', discrepancy: 'Shortage -1 pallet' }
+  { id: 'RCV-774', proof: 'RFID + Supervisor sign-off', discrepancy: 'None' },
+  { id: 'RCV-775', proof: 'RFID only', discrepancy: 'Shortage -3 bath towels' }
 ];
 
 export const usage = [
-  { asset: 'Robot-09', checkpoints: 6, runtime: 123 },
-  { asset: 'AGV-22', checkpoints: 4, runtime: 98 }
+  { asset: 'Guest Room 2108 · Bedding', checkpoints: 4, runtime: 12 },
+  { asset: 'Suite 1902 · Robes', checkpoints: 3, runtime: 8 }
 ];
 
 export const maintenancePlans = [
-  { asset: 'Compressor-01', window: 'Q3', frequency: 'Monthly', next: '2024-07-12' },
-  { asset: 'Generator-02', window: 'Weekly', frequency: 'Weekly', next: '2024-05-22' }
+  { asset: 'Pool Towel Rotation', window: 'Daily 06:00', frequency: 'Daily', next: 'Today' },
+  { asset: 'Suite Bedding Deep Clean', window: 'Mondays', frequency: 'Weekly', next: 'Next Mon' }
 ];
 
 export const maintenanceHistory = [
-  { asset: 'Compressor-01', technician: 'Jamie', result: 'Passed', notes: 'Replaced filter' },
-  { asset: 'Generator-02', technician: 'Chen', result: 'Follow-up', notes: 'Vibration alert' }
+  { asset: 'King Duvet · Floor 28', technician: 'Jamie', result: 'Passed', notes: 'Stain removed, re-tagged' },
+  { asset: 'Spa Robe · Floor 12', technician: 'Chen', result: 'Follow-up', notes: 'Small tear, queued for mend' }
 ];
 
 export const scrapItems = [
-  { asset: 'Battery-44', method: 'Certified recycle', compliance: 'EPA-202' },
-  { asset: 'Frame-12', method: 'Shred', compliance: 'ISO-14001' }
+  { asset: 'Hand Towel · Conference Wing', method: 'Pulped', compliance: 'Local textile recycle' },
+  { asset: 'Runner · Ballroom', method: 'Shred', compliance: 'Vendor certificate on file' }
 ];
 
 export const timeline = [
-  { time: '08:05', text: 'Inbound pallet EPC-9001 read at Dock A2' },
-  { time: '08:17', text: 'Transfer TR-101 verified at Line 3 gate' },
-  { time: '08:25', text: 'Maintenance check-in via handheld reader' }
+  { time: '08:05', text: 'Laundry-4821 cart scanned at Service Dock A2' },
+  { time: '08:17', text: 'Transfer TR-101 verified into Housekeeping Closet 5F' },
+  { time: '08:25', text: 'Suite 1902 robe tagged via handheld reader' }
 ];

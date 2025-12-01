@@ -1,7 +1,7 @@
 export default {
   app: {
-    title: 'RFID 赋能的移动端 ERP',
-    subtitle: '双语、极速，为资产密集型团队而生'
+    title: '酒店布草 RFID 中枢',
+    subtitle: '双语、极速，为客房与洗衣高频流程而生'
   },
   common: {
     search: '搜索',
@@ -25,47 +25,47 @@ export default {
   },
   modules: {
     inbound: {
-      title: '入库管理',
-      desc: '预分配、月台指派、质检均通过 RFID 校验'
+      title: '洗衣入库',
+      desc: '月台收货、污渍质检、EPC 校验一体化'
     },
     tag: {
       title: '标签绑定',
-      desc: '批量高频扫描，自动配对资产与 EPC'
+      desc: '高速批量绑定床品、毛巾、浴袍、地巾等 EPC'
     },
     transfer: {
       title: '调拨',
-      desc: '仓库、产线、车辆间的 RFID 确认调拨'
+      desc: '洗衣房、布草间与手推车之间的 RFID 确认调拨'
     },
     receiving: {
       title: '接收',
-      desc: 'RFID 辅助接收与异常处理'
+      desc: '客房/场馆收货，RFID 凭证与差异留痕'
     },
     usage: {
       title: '使用追踪',
-      desc: '通过 RFID 关口采集运行数据'
+      desc: '按房间/翻台读取，监控单件循环次数'
     },
     maintenancePlan: {
-      title: '维修计划',
-      desc: '实时读写驱动的预防性保养计划'
+      title: '去渍与修补计划',
+      desc: '由读写驱动的轮换与深度清洁排程'
     },
     maintenanceRecords: {
-      title: '维修记录',
-      desc: '围绕 RFID 身份的闭环记录'
+      title: '修补记录',
+      desc: '围绕布草 RFID 身份的闭环追踪'
     },
     scrap: {
       title: '报废管理',
-      desc: '全流程合规留痕的生命周期终结'
+      desc: '报废/再生全链路合规留痕'
     }
   },
   dashboard: {
-    heading: 'RFID 运行控制中心',
+    heading: '布草 RFID 控制中心',
     velocity: '扫描速度',
     accuracy: '读取准确率',
     uptime: '读写器在线率',
     timeline: 'RFID 事件时间线'
   },
   inbound: {
-    title: '入库管理',
+    title: '洗衣入库',
     preload: '预报',
     staging: '暂存区',
     qaStatus: '质检状态',
@@ -73,7 +73,7 @@ export default {
   },
   tagBinding: {
     title: '批量标签绑定',
-    guidance: '高速交替扫描资产与标签，系统自动配对。',
+    guidance: '高速交替扫描布草与标签，系统自动配对。',
     bound: '已绑定',
     pending: '待确认',
     errors: '冲突'

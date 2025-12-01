@@ -1,7 +1,7 @@
 export default {
   app: {
-    title: 'RFID-enabled Mobile ERP',
-    subtitle: 'Fast, bilingual, and purpose-built for asset-intensive teams'
+    title: 'Hotel Linen RFID Control',
+    subtitle: 'Fast, bilingual, and tuned for housekeeping and laundry'
   },
   common: {
     search: 'Search',
@@ -25,47 +25,47 @@ export default {
   },
   modules: {
     inbound: {
-      title: 'Inbound',
-      desc: 'Pre-allocations, dock assignments, and QA with RFID validation'
+      title: 'Inbound laundry',
+      desc: 'Dock intake, stain QA, and EPC validation for returned linen carts'
     },
     tag: {
       title: 'Tag Binding',
-      desc: 'Bind physical assets to EPCs with batch scans and verification'
+      desc: 'Bind sheets, towels, robes, and runners to EPCs at batch speed'
     },
     transfer: {
       title: 'Transfer',
-      desc: 'RFID-confirmed moves across warehouses, lines, and vehicles'
+      desc: 'RFID-confirmed moves between laundry, housekeeping closets, and carts'
     },
     receiving: {
       title: 'Receiving',
-      desc: 'RFID-assisted receiving and exceptions handling'
+      desc: 'Room or venue receiving with RFID-backed proof and discrepancy capture'
     },
     usage: {
       title: 'Usage tracking',
-      desc: 'Operational telemetry and usage checkpoints via RFID portals'
+      desc: 'Reads by room/turnover to monitor cycles per item type'
     },
     maintenancePlan: {
-      title: 'Maintenance plan',
-      desc: 'Preventive schedules driven by real-time tag reads'
+      title: 'Stain & repair plan',
+      desc: 'Preventive rotations and deep-clean schedules driven by tag reads'
     },
     maintenanceRecords: {
-      title: 'Maintenance records',
-      desc: 'Close-the-loop logs tied to RFID identity'
+      title: 'Repair records',
+      desc: 'Close-the-loop logs for stained or damaged linen with RFID identity'
     },
     scrap: {
       title: 'Scrap',
-      desc: 'Chain-of-custody and compliance for end-of-life items'
+      desc: 'Chain-of-custody for worn-out items headed to recycling or pulping'
     }
   },
   dashboard: {
-    heading: 'RFID Operational Control Center',
+    heading: 'Linen RFID Control Center',
     velocity: 'Scan velocity',
     accuracy: 'Read accuracy',
     uptime: 'Reader uptime',
     timeline: 'RFID events timeline'
   },
   inbound: {
-    title: 'Inbound management',
+    title: 'Inbound laundry',
     preload: 'Pre-advices',
     staging: 'Staging location',
     qaStatus: 'QA status',
@@ -73,7 +73,7 @@ export default {
   },
   tagBinding: {
     title: 'Batch tag binding',
-    guidance: 'Scan assets and tags in fast succession to auto-pair.',
+    guidance: 'Scan linens and tags in fast succession to auto-pair.',
     bound: 'Bound',
     pending: 'Pending verification',
     errors: 'Conflicts'

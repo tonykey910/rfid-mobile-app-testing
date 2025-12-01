@@ -1,7 +1,7 @@
 import { ref } from 'vue';
 
 const randomEpc = () => `EPC-${Math.floor(Math.random() * 99999)}`;
-const assets = ['Valve', 'Pump', 'Forklift', 'Robot', 'Crate', 'Vehicle'];
+const assets = ['King Sheet', 'Queen Duvet', 'Bath Towel', 'Hand Towel', 'Spa Robe', 'Runner'];
 
 export function useRFID(capacity = 10) {
   const queue = ref([]);
