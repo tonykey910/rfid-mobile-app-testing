@@ -1,6 +1,9 @@
 # Hotel Linen RFID Mobile ERP (Vue 3 + uViewPlus-inspired)
 
 A bilingual (English/中文) RFID-focused mobile ERP prototype for hotel linen operations. It simulates end-to-end flows for inbound laundry, tag binding, cart/closet transfers, guest-room receiving, usage tracking by room/turnover, stain-repair planning, and scrap governance—all with high-velocity RFID interactions.
+# RFID Mobile ERP (Vue 3 + uViewPlus-inspired)
+
+
 
 ## Quick start
 
@@ -70,3 +73,17 @@ Compress-Archive -Path "rfid-mobile-app-testing\*" -CompressionLevel Optimal -Fo
 
 ## RFID simulation
 The `useRFID` composable generates EPCs for sheets, duvets, towels, robes, and runners, maintains a bounded queue, and tracks velocity/accuracy so flows can be exercised without hardware.
+## Features
+- **RFID-first workflows:** shared scanner panel delivers burst and continuous reads with live velocity metrics.
+- **ERP modules:** inbound, tag binding, transfer, receiving, usage tracking, maintenance planning & records, and scrap handling.
+- **Dual language:** English by default with a one-tap 中文 toggle.
+- **Mobile-friendly:** responsive cards, concise tables, and minimal chrome for rapid scans.
+
+## Structure
+- `src/i18n`: locale dictionaries and i18n setup.
+- `src/utils/rfid.js`: mock RFID engine for burst or continuous scans.
+- `src/views`: module pages wired to the shared scanner pad and mock datasets.
+- `src/components`: UI primitives including language switcher, module cards, and the RFID pad.
+
+## RFID simulation
+The `useRFID` composable generates EPCs, maintains a bounded queue, and tracks velocity/accuracy so flows can be exercised without hardware.
